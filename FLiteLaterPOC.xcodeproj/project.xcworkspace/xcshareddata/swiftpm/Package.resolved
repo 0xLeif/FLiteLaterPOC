@@ -14,9 +14,9 @@
         "package": "FLite",
         "repositoryURL": "https://github.com/0xLeif/FLite",
         "state": {
-          "branch": "develop",
-          "revision": "41ad560bec0d71d6b4e591928d92e70bc3919261",
-          "version": null
+          "branch": null,
+          "revision": "7e98b7db2bd4dcc1db38827fa0ad71618f1c74c5",
+          "version": "1.0.0"
         }
       },
       {
@@ -41,9 +41,9 @@
         "package": "Later",
         "repositoryURL": "https://github.com/0xLeif/Later",
         "state": {
-          "branch": "develop",
-          "revision": "0d8697de9c8a047c5e3ee704cd356282368b2ae2",
-          "version": null
+          "branch": null,
+          "revision": "e2d6c2e17f6f848bae250a0c3908a51e36cb6987",
+          "version": "0.4.0"
         }
       },
       {
