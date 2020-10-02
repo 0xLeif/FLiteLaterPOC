@@ -32,4 +32,28 @@ struct FLiteLaterPOCApp: App {
 }
 ```
 
+## Later Usage
+```swift
+.navigationBarItems(
+    leading: Button("Delete All") {
+        Later.whenAllSucceed(
+            items.map {
+                store.persist.delete(model: $0)
+            }
+        )
+        .flatMap { _ in store.persist.all(model: Planet.self) }
+        .whenSuccess { items = $0 }
+    },
+    trailing: Button("100") {
+        Later.whenAllSucceed(
+            (0 ... 99).map { _ in
+                store.persist.add(model: Planet.random)
+            }
+        )
+        .flatMap { _ in store.persist.all(model: Planet.self) }
+        .whenSuccess { items = $0 }
+    }
+)
+```
+
 ![Example Video](.media/example.gif)
