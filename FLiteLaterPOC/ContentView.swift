@@ -42,7 +42,7 @@ struct ContentView: View {
             trailing: Button("100") {
                 Later.whenAllSucceed(
                     (0 ... 99).map { _ in
-                        store.persist.add(model: Planet(name: "New Planet \(Int.random(in: 0 ... 9))\(Int.random(in: 0 ... 9))\(Int.random(in: 0 ... 9))\(Int.random(in: 0 ... 9))"))
+                        store.persist.add(model: Planet.random)
                     }
                 )
                 .flatMap { _ in store.persist.all(model: Planet.self) }
