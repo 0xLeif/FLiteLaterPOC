@@ -1,6 +1,7 @@
 # [FLite](https://github.com/0xLeif/FLite) and [Later](https://github.com/0xLeif/Later) POC
 
 ## FLiteStore
+
 ```swift
 class FLiteStore: ObservableObject {
     public var memory = FLite(loggerLabel: "memory-FLITE")
@@ -9,11 +10,12 @@ class FLiteStore: ObservableObject {
 ```
 
 ## FLiteLaterPOCApp
+
 ```swift
 @main
 struct FLiteLaterPOCApp: App {
     let store = FLiteStore()
-    
+
     var body: some Scene {
         WindowGroup {
             NavigationView {
@@ -26,9 +28,8 @@ struct FLiteLaterPOCApp: App {
                 print("Prepared Migrations")
             }
         }
-        
     }
 }
 ```
 
-![Example Image](.media/example.png)
+![Example Video](.media/example.mp4)
