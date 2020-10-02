@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		29FD66EF2527C877005585DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD66EE2527C877005585DF /* ContentView.swift */; };
 		29FD66F12527C878005585DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FD66F02527C878005585DF /* Assets.xcassets */; };
 		29FD66F42527C878005585DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FD66F32527C878005585DF /* Preview Assets.xcassets */; };
+		29FD66FE2527C936005585DF /* FLite in Frameworks */ = {isa = PBXBuildFile; productRef = 29FD66FD2527C936005585DF /* FLite */; };
+		29FD67022527C94D005585DF /* Later in Frameworks */ = {isa = PBXBuildFile; productRef = 29FD67012527C94D005585DF /* Later */; };
+		29FD67052527CBA7005585DF /* Planet+FLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD67042527CBA7005585DF /* Planet+FLite.swift */; };
+		29FD670B2527D36B005585DF /* PlanetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD670A2527D36B005585DF /* PlanetDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,8 @@
 		29FD66F02527C878005585DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29FD66F32527C878005585DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		29FD66F52527C878005585DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29FD67042527CBA7005585DF /* Planet+FLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planet+FLite.swift"; sourceTree = "<group>"; };
+		29FD670A2527D36B005585DF /* PlanetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FD66FE2527C936005585DF /* FLite in Frameworks */,
+				29FD67022527C94D005585DF /* Later in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +60,8 @@
 		29FD66EB2527C877005585DF /* FLiteLaterPOC */ = {
 			isa = PBXGroup;
 			children = (
+				29FD67092527D352005585DF /* Models */,
+				29FD67082527D34D005585DF /* Views */,
 				29FD66EC2527C877005585DF /* FLiteLaterPOCApp.swift */,
 				29FD66EE2527C877005585DF /* ContentView.swift */,
 				29FD66F02527C878005585DF /* Assets.xcassets */,
@@ -67,6 +77,22 @@
 				29FD66F32527C878005585DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		29FD67082527D34D005585DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29FD670A2527D36B005585DF /* PlanetDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29FD67092527D352005585DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29FD67042527CBA7005585DF /* Planet+FLite.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +111,10 @@
 			dependencies = (
 			);
 			name = FLiteLaterPOC;
+			packageProductDependencies = (
+				29FD66FD2527C936005585DF /* FLite */,
+				29FD67012527C94D005585DF /* Later */,
+			);
 			productName = FLiteLaterPOC;
 			productReference = 29FD66E92527C877005585DF /* FLiteLaterPOC.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +142,10 @@
 				Base,
 			);
 			mainGroup = 29FD66E02527C877005585DF;
+			packageReferences = (
+				29FD66FC2527C936005585DF /* XCRemoteSwiftPackageReference "FLite" */,
+				29FD67002527C94D005585DF /* XCRemoteSwiftPackageReference "Later" */,
+			);
 			productRefGroup = 29FD66EA2527C877005585DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +174,8 @@
 			files = (
 				29FD66EF2527C877005585DF /* ContentView.swift in Sources */,
 				29FD66ED2527C877005585DF /* FLiteLaterPOCApp.swift in Sources */,
+				29FD67052527CBA7005585DF /* Planet+FLite.swift in Sources */,
+				29FD670B2527D36B005585DF /* PlanetDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +364,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29FD66FC2527C936005585DF /* XCRemoteSwiftPackageReference "FLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/FLite";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		29FD67002527C94D005585DF /* XCRemoteSwiftPackageReference "Later" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/Later";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29FD66FD2527C936005585DF /* FLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29FD66FC2527C936005585DF /* XCRemoteSwiftPackageReference "FLite" */;
+			productName = FLite;
+		};
+		29FD67012527C94D005585DF /* Later */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29FD67002527C94D005585DF /* XCRemoteSwiftPackageReference "Later" */;
+			productName = Later;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29FD66E12527C877005585DF /* Project object */;
 }
