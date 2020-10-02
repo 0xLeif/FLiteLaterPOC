@@ -42,3 +42,10 @@ extension Planet: Migration {
         database.schema(Planet.schema).delete()
     }
 }
+
+// MARK: Mock Random
+extension Planet {
+    static var random: Planet {
+        Planet(name: "New Planet \(Int.random(in: 0 ... 9))\(Int.random(in: 0 ... 9))\(Int.random(in: 0 ... 9))\(Int.random(in: 0 ... 9))")
+    }
+}
