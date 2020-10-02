@@ -32,4 +32,4 @@ struct FLiteLaterPOCApp: App {
 }
 ```
 
-![Example Video](.media/example.mp4)
+![Example Video](.media/example.gif)
